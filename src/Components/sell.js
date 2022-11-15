@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Sell = () => {
   return (
-    <div>this is Sell</div>
+    <div style={{marginTop:"15vh"}}>this is Sell</div>
   )
 }

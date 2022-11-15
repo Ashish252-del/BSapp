@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import AppBar from "@mui/material/AppBar";
 // import Box from '@mui/material/Box';
 import Toolbar from "@mui/material/Toolbar";
@@ -22,10 +23,13 @@ import Typography from "@mui/material/Typography";
 import useTheme from "@mui/material/styles/useTheme";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import DrawerComp from "./drawer";
+import { Link } from "react-router-dom";
+// import { Style } from "@material-ui/icons";
+
 
 // import AutoStoriesIcon from '@material-ui/icons/AutoStories';
 const PAGES = ["Home", "To Buy", "To Sell", "About Us"];
-
+const Rout = ["/Home", "/Buy", "/Sell", "/Aboutus"];
 const ResponsiveAppBar = () => {
   const [value, setValue] = React.useState();
   const theme = useTheme();
@@ -38,7 +42,9 @@ const ResponsiveAppBar = () => {
           <MenuBookIcon />
           {isMatch ? (
             <>
-              <Typography sx={{fontSize:"1.5rem", paddingLeft:"10%"}}>Open menu</Typography>
+              <Typography sx={{ fontSize: "1.5rem", paddingLeft: "10%" }}>
+                Open menu
+              </Typography>
               <DrawerComp />
             </>
           ) : (
@@ -49,11 +55,11 @@ const ResponsiveAppBar = () => {
               onChange={(e, value) => setValue(value)}
               indicatorColor="secondary"
             >
-              {
-                PAGES.map((page, index)=> (
-                  <Tab key={index} label={page} />
-                ) )
-              }
+              {PAGES.map((page, index) => (
+                
+                  <Tab key={index} label={page} component={Link} to={Rout[index]} />
+              
+              ))}
             </Tabs>
           )}
 

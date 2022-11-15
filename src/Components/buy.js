@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Buy = () => {
   return (
-    <div>this is buy</div>
+    <div style={{marginTop:"15vh"}}>this is buy</div>
   )
 }
