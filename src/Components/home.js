@@ -10,7 +10,6 @@ export const Home = () => {
       <br />
       <br />
       <br />
-      <h2>fhfhfhfhfhhffhhffh</h2>
     </div>
   )
 }

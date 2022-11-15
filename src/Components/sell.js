@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import { Fillsellform } from './fillform'
 
 export const Sell = () => {
   return (
-    <div style={{marginTop:"15vh"}}>this is Sell</div>
+    <div style={{marginTop:"15vh"}}><Fillsellform/></div>
   )
 }
