@@ -1,12 +1,16 @@
 import React from 'react';
-import ResponsiveAppBar from './navbar';
+
 // import BasicTabs from './navbar1';
 
 
 export const Home = () => {
   return (
     <div>
-    <ResponsiveAppBar/>
+      <h1>Hello from home</h1>
+      <br />
+      <br />
+      <br />
+      <h2>fhfhfhfhfhhffhhffh</h2>
     </div>
   )
 }
