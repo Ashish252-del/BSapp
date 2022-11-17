@@ -4,13 +4,13 @@ import Card from "@mui/material/Card";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import "../App.css";
+import "./style.css";
 
 export const Fillsellform = () => {
   return (
     <div>
       <h3 style={{textAlign:"center"}}>Fill your details</h3>
-      <Card className="buycard mx-auto ">
+      <Card className="sellcard mx-auto ">
         <CardContent>
           <Box
             component="form"

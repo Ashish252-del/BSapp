@@ -1,5 +1,7 @@
 import React from 'react';
-import { Fillsellform } from './fillform'
+import { Fillsellform } from './fillform';
+import "./style.css";
+import "../App.css"
 
 export const Sell = () => {
   return (
