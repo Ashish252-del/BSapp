@@ -14,7 +14,7 @@ import IconButton from '@mui/material/IconButton';
 import { NavLink } from 'react-router-dom';
 
 const PAGES = ["Home", "To Buy", "To Sell", "About Us", "logout"];
-const Rout = ["/Home", "/Buy", "/Sell", "/Aboutus"];
+const Rout = ["/", "/Buy", "/Sell", "/Aboutus"];
 const DrawerComp=()=>{
     
 const [openDrawer, setOpenDrawer]= useState(false);
