@@ -29,7 +29,7 @@ import { Link } from "react-router-dom";
 
 // import AutoStoriesIcon from '@material-ui/icons/AutoStories';
 const PAGES = ["Home", "To Buy", "To Sell", "About Us"];
-const Rout = ["/Home", "/Buy", "/Sell", "/Aboutus"];
+const Rout = ["/", "/Buy", "/Sell", "/Aboutus"];
 const ResponsiveAppBar = () => {
   const [value, setValue] = React.useState();
   const theme = useTheme();
